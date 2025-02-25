@@ -1,4 +1,5 @@
-Als gemeenteambtenaar wil ik, door een nieuw gemeenteraadsbesluit, nauwkeurig kunnen bepalen wat de impact is van rooilijnen op zowel de bestaande infrastructuur als de aangrenzende percelen.
+Als gemeenteambtenaar wil ik, door een nieuw gemeenteraadsbesluit, nauwkeurig kunnen bepalen wat de impact is van 
+rooilijnen op zowel de bestaande infrastructuur als de aangrenzende percelen.
 
 Bij het verleggen van rooilijnen wordt gekeken naar de impact op kadastrale patrimoniumpercelen, 
 waarbij percelen die worden beïnvloed snel kunnen worden geïdentificeerd. 
