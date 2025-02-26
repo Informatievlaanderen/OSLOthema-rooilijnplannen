@@ -3,7 +3,7 @@ rooilijnen op zowel de bestaande infrastructuur als de aangrenzende percelen.
 
 Bij het verleggen van rooilijnen wordt gekeken naar de impact op kadastrale patrimoniumpercelen, 
 waarbij percelen die worden beïnvloed snel kunnen worden geïdentificeerd. 
-Dit is belangrijk voor het beheren van agents of personen met zakelijke rechten op deze percelen, 
+Dit is belangrijk voor het beheren van agents met zakelijke rechten op deze percelen, 
 zodat zij op de hoogte gebracht kunnen worden van de veranderingen. 
 Het gebruik van kadastrale plannen helpt bij het visualiseren van deze aanpassingen binnen de ruimtelijke eenheid.
 
