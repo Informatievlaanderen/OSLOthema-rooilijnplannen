@@ -1,8 +1,12 @@
-Een **gemeente** wil aan de linkerkant van het **wegsegment** de **grens openbaar domein** verbreden en 
-wil weten welke **percelen** getroffen worden door de **nieuwe rooilijn**. 
-De gemeente wil wel verhinderen dat de nieuwe rooilijn de (gewenste) **bouwlijn** overschrijdt. 
-Deze informatie zal deel uitmaken van een **rooilijnplan** die door 
-de gemeenteraad als **besluit** moet goedgekeurd worden. 
+Als gemeenteambtenaar wil ik weten dat, omwille van de nieuwe omgevingsvergunning, 
+alle relevante informatie beschikbaar is voor de heraanleg van het kruispunt Dijkstraat - Zelebaan, 
+zoals de vaststelling van het rooilijnplan RLP001 en de publicatiedatum van het besluit. 
+Ik moet inzicht hebben in de feitelijke en ontworpen rooilijnen (RL001 en RL002), inclusief hun geometrie en kenmerken. 
+Verder moet ik weten welke percelen door het rooilijninventaris (RLI001) worden beïnvloed, 
+inclusief hun identificatoren (KPP001, KPP002, KPP003) en de eigenaar, zoals de persoon Van de Velde. 
+Tot slot wil ik ook de bouwlijn zien en de bijhorende achteruitbouwstrook (bouwverbod vs geen bouwverbod). 
+De gemeenteambtenaar moet ook de oude "opgeheven" rooilijn kunnen zien. 
+Dit stelt me in staat om snel en accuraat betrokkenen te informeren en de projectuitvoering te coördineren.
 
 Opmerking:
 De wet staat elke overheid toe om te onteigenen. 
