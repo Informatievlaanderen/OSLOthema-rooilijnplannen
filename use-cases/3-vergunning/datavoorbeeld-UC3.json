@@ -1,0 +1,88 @@
+{
+  "@context": "",
+  "@graph": [
+    {
+      "@id": "https://example.com/id/besluit/GB001",
+      "@type": [
+        "Besluit",
+        "Gemeenteraadsbesluit"
+      ],
+      "Besluit.identificator": "GB2023-001",
+      "Besluit.betreftRooilijnen": [
+        "https://example.com/id/rooilijn/RL001"
+      ],
+      "Besluit.betreftPercelen": [
+        "https://example.com/id/kadastraalPatrimoniumperceel/KPP001"
+      ],
+      "Besluit.betreftWegsegmenten": [
+        "https://example.com/id/wegsegment/WS003"
+      ],
+      "Besluit.betreftWegknopen": [
+        "https://example.com/id/wegknoop/WK003"
+      ]
+    },
+    {
+      "@id": "https://example.com/id/rooilijn/RL001",
+      "@type": "Rooilijn",
+      "Rooilijn.geometrie": {
+        "@type": "sf:LineString",
+        "Geometrie.coordinaten": [
+          [
+            4.895168,
+            52.370216
+          ],
+          [
+            4.893251,
+            52.370439
+          ]
+        ]
+      },
+      "Rooilijn.kenmerkLinks": {
+        "@type": "OpenbareWeg"
+      },
+      "Rooilijn.kenmerkrechts": {
+        "@type": "AangelandeEigendommen"
+      }
+    },
+    {
+      "@id": "https://example.com/id/kadastraalPatrimoniumperceel/KPP001",
+      "@type": "KadastraalPatrimoniumperceel",
+      "KadastraalPatrimoniumperceel.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "46382B0835/00F000",
+          "@type": "https://example.com/identificatortype/capakey"
+        }
+      },
+      "KadastraalPatrimoniumperceel.agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
+    },
+    {
+      "@id": "https://example.com/id/wegsegment/WS003",
+      "@type": "WegSegment",
+      "WegSegment.geometrie": {
+        "@type": "sf:LineString",
+        "Geometrie.coordinaten": [
+          [
+            4.891,
+            52.37
+          ],
+          [
+            4.892,
+            52.371
+          ]
+        ]
+      },
+      "WegSegment.impact": "Aanpassing door rooilijnverlegging"
+    },
+    {
+      "@id": "https://example.com/id/wegknoop/WK003",
+      "@type": "WegKnoop",
+      "WegKnoop.functie": "Verbindend knooppunt aangepast door rooilijn."
+    },
+    {
+      "@id": "https://example.com/id/persoon/PRS001",
+      "@type": "Persoon",
+      "Persoon.achternaam": "Jansen"
+    }
+  ]
+}
