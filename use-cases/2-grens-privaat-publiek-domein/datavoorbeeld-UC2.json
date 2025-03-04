@@ -1,0 +1,46 @@
+{
+  "@context": "",
+  "@graph": [
+    {
+      "@id": "https://example.com/id/plan/RUP001",
+      "@type": [
+        "RuimtelijkUitvoeringsplan"
+      ],
+      "Plan.doel": "Fluvius wenst een nieuwe elektriciteitskabel te leggen in een straat.",
+      "Plan.noodzaak": "Bepalen van de grens tussen privaat en publiek domein.",
+      "Plan.deelOverweging": [
+        "Grens bepalen tussen de openbare weg en de aangelande eigendommen.",
+        "Gegevens nodig om te beoordelen of een rijbaan al dan niet onderbroken zal zijn door de werken."
+      ],
+      "Plan.geometrie": {
+        "@id": "https://example.com/id/rooilijn/RL001",
+        "@type": [
+          "Rooilijn"
+        ],
+        "Rooilijn.geometrie": {
+          "@type": "sf:LineString",
+          "Geometrie.coordinaten": [
+            [
+              4.895168,
+              52.370216
+            ],
+            [
+              4.893251,
+              52.370439
+            ],
+            [
+              4.89286,
+              52.371055
+            ]
+          ]
+        },
+        "Rooilijn.kenmerkLinks": {
+          "@type": "OpenbareWeg"
+        },
+        "Rooilijn.kenmerkrechts": {
+          "@type": "AangelandeEigendommen"
+        }
+      }
+    }
+  ]
+}
