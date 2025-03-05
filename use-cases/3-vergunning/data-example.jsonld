@@ -1,10 +1,20 @@
 {
-  "@context": "",
+  "@context": {
+    "@vocab": "https://test.data.vlaanderen.be/ns/rooilijnplannen#",
+    "besluit": "http://data.vlaanderen.be/ns/besluit#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "perceel": "https://data.vlaanderen.be/ns/perceel#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "perceel:agentMetZakelijkRecht": {
+      "@type": "@id"
+    }
+  },
   "@graph": [
     {
       "@id": "https://example.com/id/besluit/GB001",
       "@type": [
-        "Besluit",
+        "besluit:Besluit",
         "Gemeenteraadsbesluit"
       ],
       "Besluit.identificator": "GB2023-001",
@@ -46,15 +56,15 @@
     },
     {
       "@id": "https://example.com/id/kadastraalPatrimoniumperceel/KPP001",
-      "@type": "KadastraalPatrimoniumperceel",
-      "KadastraalPatrimoniumperceel.identificator": {
-        "@type": "Identificator",
-        "Identificator.identificator": {
+      "@type": "perceel:KadastraalPatrimoniumperceel",
+      "adms:identificator": {
+        "@type": "adms:Identificator",
+        "skos.notation": {
           "@value": "46382B0835/00F000",
           "@type": "https://example.com/identificatortype/capakey"
         }
       },
-      "KadastraalPatrimoniumperceel.agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
+      "perceel:agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
     },
     {
       "@id": "https://example.com/id/wegsegment/WS003",
