@@ -3,7 +3,7 @@
     "@vocab": "https://test.data.vlaanderen.be/ns/rooilijnplannen#",
     "sf": "http://www.opengis.net/ont/sf#",
     "adms": "http://www.w3.org/ns/adms#",
-    "toegekendDoor": "http://purl.org/dc/terms/creator"
+    "toegekendDoor": { "@id": "http://purl.org/dc/terms/creator", "@type": "@id"}
   },
   "@graph": [
     {
