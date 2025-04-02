@@ -4,7 +4,7 @@
 		"type": "ap",
 		"eap": "Rooilijnplannen.eap",
 		"diagram": "Rooilijnplannen",
-		"template": "mijn-applicatieprofiel-ap.j2",
+		"template": "rooilijnplannen-ap.j2",
 		"title": "OSLO-Rooilijnplannen (Applicatieprofiel)",
 		"publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
 		"publication-date": "2025-04-01",
