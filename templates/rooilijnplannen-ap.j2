@@ -1,7 +1,18 @@
 {% extends "ap2.j2" %}
 
 {% block summary %}
-<p>Vul hier een samenvatting van mijn applicatieprofiel in.</p>
+<p>Het applicatieprofiel OSLO-Rooilijnplannen beschrijft hoe met het overeenstemmend vocabularium, aangevuld met termen uit andere vocabularia, een Rooilijnplan en de gegevens op dat plan kunnen worden beschreven.</p>
+<p>Centraal staat de Rooilijn, een object dat de grens tussen de OpenbareWeg en de zgn AangelandeEigendommen beschrijft.</p>
+<p>Deze Rooilijnen kunnen bestaande Rooilijnen of FeitelijkeRooilijnen zijn, of nog te realiseren Rooilijnen of OntworpenRooilijnen.</p>
+<p>Bij de aanleg of aanpassing van een OpenbareWeg worden deze vastgelegd in een Rooilijnplan, geofficialiseerd dmv een Besluit (zie OSLO-Besluit), RuimtelijkUitvoeringsplan of Omgevingsvergunning (Zie OSLO-Omgevingsvergunning).</p>
+<p>De impact van een OntworpenRooilijn wordt geïnventariseerd in een Rooilijninventaris die een opsomming bevat van de percelen of wegen waar de nieuwe Rooilijn doorloopt waardoor delen daarvan aan het openbaar domein zullen worden toegevoegd of afgestaan.</p>
+<p>De betrokken delen kunnen als vlakken worden weergegeven op het plan incl hun oppervlakte, hetzij individueel per perceel of weg, hetzij in totaal voor alle OntworpenRooilijnen op het Rooilijnplan.</p>
+<p>Op een Rooilijnplan kunnen nog andere elementen staan zoals de Bouwlijn of Achteruitbouwstrook die de zone naast de OpenbareWeg aangeeft waarin niet gebouwd mag worden.</p>
+<p>De AangelandeEigendommen, OpenbareWeg, zone met Bouwverbod en GeenBouwverbod worden beschreven als kenmerken die zich links hetzij rechts van resp de Rooilijn of Bouwlijn voordoen.</p>
+<p>Deze kenmerken en meer bepaald AangelandeEigendommen en OpenbareWeg worden verder beschreven door de objecten op te sommen waarop ze betrekking hebben, bij de AangelandeEigendommen zijn dat de percelen en bij de OpenbareWeg de wegbanen of wegsegmenten waardoor de weg gevormd wordt.</p>
+<p>Onder percelen verstaan we KadastralePatrimoniumPercelen (zie OSLO-Perceel), dit zijn de percelen die in de Rooilijninventaris worden weergegeven en waarvan het overeenstemmend KadastraalPlanperceel op het plan wordt getoond.</p>
+<p>Wegbanen beschrijven de volledige wegcorridor van de OpenbareWeg, ttz de rijbaan maar ook het voetpad of fietspad en de eventuele berm. De rand vd Wegbaan valt in principe samen met de Rooilijn of vormt daarvan een goede benadering. Alternatief kan de OpenbareWeg worden afgebakend door de lijnen die het wegennetwerk vormen te combineren met de wegbreedte.</p>
+<p>Bijkomend zijn klassen voorzien om andere kenmerken van Rooilijnen of Bouwlijnen te beschrijven, incl de mogelijkheid om deze dmv LineaireReferentie te beperken tot een deel of een kant van de Lijn. Bvb om aan te geven welke delen van een FeitelijkeRooilijn behouden blijven en welke delen worden afgeschaft.</p>
 {% endblock %}
 
 {% block status %}
