@@ -14,5 +14,20 @@
 		"site": "site-skeleton/rooilijnplannen",
 		"feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
 		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/"
+	},
+	{
+		"name": "rooilijnplannen-voc",
+		"type": "voc",
+		"eap": "Rooilijnplannen.eap",
+		"diagram": "Rooilijnplannen",
+		"template": "rooilijnplannen-voc.j2",
+		"title": "OSLO-Rooilijnplannen (Vocabularium)",
+		"publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+		"publication-date": "2025-04-01",
+		"license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+		"contributors-file": "stakeholders.csv",
+		"contributors-column": "MijnKolom",
+		"feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
+		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/"
 	}
 ]
