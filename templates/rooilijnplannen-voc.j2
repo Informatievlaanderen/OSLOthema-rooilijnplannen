@@ -1,9 +1,15 @@
 {% extends "voc2.j2" %}
 
 {% block summary %}
-<p>Vul hier een samenvatting van mijn vocabularium in.</p>
+<p>Het vocabularium OSLO-Rooilijnplannen definieert termen die betrekking hebben op het domein van Rooilijnplannen.</p>
+<p>Centraal staat de klasse Rooilijn, een object dat de grens tussen de OpenbareWeg en de zgn AangelandeEigendommen beschrijft. OpenbareWeg en aangelandeEigendommen zijn zgn Rooilijnkenmerken.</p>
+<p>Er zijn eigenschappen als kenmerkLinks en kenmerkRechts om aan te geven aan welke kant vd Rooilijn de OpenbareWeg of de AangelandeEigendommen liggen.</p>
+<p>Eveneens zijn er klassen zoals OpenbareWegreferentie en Perceelreferentie voorzien en bijhorende eigenschappen gemaakt om resp naar Wegbanen of Wegsegmenten en de PatrimonialeKadastralePercelen te verwijzen die de OpenbareWeg resp de AangelandeEigendommen vormen.</p>
+<p>De Rooilijnen kunnen bestaande Rooilijnen of FeitelijkeRooilijnen zijn, of nog te realiseren Rooilijnen of OntworpenRooilijnen.</p>
+<p>Als de AangelandeEigendommen (of OpenbareWeg) door een OntworpenRooilijn getroffen worden, typisch bij aanleg of aanpassing van wegenis, kan het GetroffenOppervlak worden opgegeven en zijn geometrie en oppervlakte.</p>
+<p>De aanleg of aanpassing van een OpenbareWeg worden vastgelegd in een Rooilijnplan, we voegen voor Besluiten, RuimtelijkeUitvoeringsplannen of Omgevingsvergunningen een term toe die toelaat om naar Rooilijnplannen te verwijzen.</p>
+<p>Er zijn eigenschappen gedefinieerd om naar de verplichte elementen op een Rooilijnplan te verwijzen (ttz de Rooilijnen en een Rooilijninventaris) of naar andere elementen zoals de Bouwlijn of Achteruitbouwstrook of andere Rooiplanelementen.</p>
+<p>Voor Bouwlijn en Achteruitbouwstrook zijn aparte klassen voorzien met de Bouwlijnkenmerken Bouwverbod en GeenBouwverbod. Aan de AangelandeEigendommen is een eigenschap voorzien om naar de eventuele Bouwlijn te verwijzen.</p>
+<p>Een voorbeeld van een applicatieprofiel waarbij termen uit dit vocabularium in combinatie met termen uit andere vocabularia worden gecombineerd om een Rooilijnplan te beschrijven is hier te vinden.</p>
 {% endblock %}
 
-{% block status %}
-<p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
-{% endblock %}
