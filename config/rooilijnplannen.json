@@ -13,15 +13,6 @@
 		"contributors-column": "MijnKolom",
 		"site": "site-skeleton/rooilijnplannen",
 		"feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
-		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/",
-		"translation": [
-			{
-				"language": "nl",
-				"template": "mijn-applicatieprofiel-ap.j2",
-				"title": "OSLO-Rooilijnplannen (Applicatieprofiel)",
-				"translationjson": "rooilijnplannen-ap_nl.json",
-				"mergefile": "rooilijnplannen-ap_nl_merged.jsonld"
-			}
-		]
+		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/"
 	}
 ]
