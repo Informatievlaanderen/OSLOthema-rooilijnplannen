@@ -1,0 +1,27 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/Rooilijntype>
+    a skos:ConceptScheme ;
+    skos:prefLabel "Conceptscheme type van rooilijnen."@nl ;
+    skos:definition "Codelijst voor type van rooilijnen."@nl .
+
+<https://data.vlaanderen.be/id/concept/Rooilijntype/HuidigeRooilijn> 
+    a skos:Concept ;
+    skos:prefLabel "HuidigeRooilijn"@nl ;
+    skos:definition "De rooilijn, vastgelegd in een rooilijnplan, die de huidige grens tussen de openbare weg en de aangelande eigendommen weergeeft."@nl ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
+
+<https://data.vlaanderen.be/id/concept/Rooilijntype/ToekomstigeRooilijn> 
+    a skos:Concept ;
+    skos:prefLabel "ToekomstigeRooilijn"@nl ;
+    skos:definition "De rooilijn, vastgelegd in een rooilijnplan, die de toekomstige, nog te realiseren grens tussen de openbare weg en de aangelande eigendommen aangeeft."@nl ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
+
+<https://data.vlaanderen.be/id/concept/Rooilijntype/GrensOpenbareWeg> 
+    a skos:Concept ;
+    skos:prefLabel "GrensOpenbareWeg"@nl ;
+    skos:definition "Elke weg die voor het openbaar verkeer openstaat, ook als de bedding ervan een private eigendom is. Een weg omvat niet enkel de (rij)baan maar ook al haar aanhorigheden."@nl ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
