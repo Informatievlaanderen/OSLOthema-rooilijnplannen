@@ -16,7 +16,7 @@
 		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/applicatieprofiel-rooilijnplannen"
 	},
 	{
-		"name": "rooilijnplannen-voc",
+		"name": "rooilijnplannen",
 		"type": "voc",
 		"eap": "Rooilijnplannen.eap",
 		"diagram": "Rooilijnplannen",
