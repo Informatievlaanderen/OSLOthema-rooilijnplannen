@@ -18,7 +18,7 @@
 	{
 		"name": "rooilijnplannen",
 		"type": "voc",
-		"eap": "Rooilijnplannen.eap",
+		"eap": "RooilijnplannenVOC.eap",
 		"diagram": "Rooilijnplannen",
 		"template": "rooilijnplannen-voc.j2",
 		"title": "Vocabularium Rooilijnplannen",
