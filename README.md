@@ -20,7 +20,7 @@ EAP-files met de UML-diagrammen.\
 Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
 Een [changelog](./CHANGELOG) met wijzigingen tov vorige versies.\
 Diverse resources:
-- Een overzicht van de [use cases]()
+- Een overzicht van de [use cases](https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen/tree/main/story-lines)
 - Een overzicht van gebruikte [bronnen]() (standaarden, implementaties, regelgeving).
 - Het [modelleringsrapport](https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen/tree/main/resources/Modeleerrapport).
 - Een map met [datavoorbeelden](https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen/tree/main/resources/Datavoorbeelden).
