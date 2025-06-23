@@ -1,0 +1,142 @@
+{
+    "@context": [
+        "https://data.vlaanderen.be/doc/applicatieprofiel/rooilijnplannen/ontwerpstandaard/2025-06-01/context/rooilijnplannen-ap.jsonld",
+        {
+            "Omgevingsvergunning.rooilijnplan": {
+                "@reverse": "Rooilijnplan.verordening"
+            },
+            "Lijn.lineaireReferentie": {
+                "@reverse": "LineaireReferentie.lijnreferentie"
+            },
+            "LineaireReferentie.lijnkenmerk": {
+                "@reverse": "Lijnkenmerk.lineaireReferentie"
+            }
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "https://example.com/id/omgevingsvergunning/OGV001",
+            "@type": "Omgevingsvergunning",
+            "Omgevingsvergunning.identificator": {
+                "@type": "Identificator",
+                "Identificator.identificator": {
+                    "@value": "2023169247",
+                    "@type": "https://example.com/concept/identificatortype/omgevingsvergunningnummer"
+                }
+            },
+            "Omgevingsvergunning.titel": {
+                "@value": "Bouw fietstunnel ter vervanging van OW94 Rauwelkoven",
+                "@language": "nl"
+            },
+            "Omgevingsvergunning.rooilijnplan": {
+                "@id": "https://example.com/id/rooilijnplan/RLP001"
+            }
+        },
+        {
+            "@id": "https://example.com/id/rooilijnplan/RLP001",
+            "@type": "Rooilijnplan",
+            "Plan.identificator": {
+                "@type": "Identificator",
+                "Identificator.identificator": {
+                    "@value": "ROO_13008_245_00045_00001",
+                    "@type": "https://example.com/concept/identificatortype/rooilijnplannummer"
+                }
+            },
+            "Rooilijnplan.rooilijn": [
+                "https://example.com/id/rooilijn/RL001",
+                "https://example.com/id/rooilijn/RL002",
+                ""
+            ]
+        },
+        {
+            "@id": "https://example.com/id/rooilijn/RL001",
+            "@type": "Rooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/HuidigeRooilijn",
+            "Planelement.naam": {
+                "@value": "Rooilijn buurtweg 140 rechts",
+                "@language": "nl"
+            },
+            "Rooilijn.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:LineString srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:LineString>",
+                    "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                }
+            },
+            "Rooilijn.kenmerkLinks": {
+                "@type": "OpenbareWeg"
+            },
+            "Rooilijn.kenmerkRechts": {
+                "@type": "AangelandeEigendommen"
+            },
+            "Lijn.lineaireReferentie": {
+                "@type": "LineaireReferentie",
+                "LineaireReferentie.lijnkenmerk": {
+                    "@type": "Lijnkenmerk",
+                    "Lijnkenmerk.type": "https://example.com/concept/lijnstatustype/afTeSchaffen"
+                },
+                "LineaireReferentie.vanPositie": {
+                    "@type": "KwantitatieveWaarde",
+                    "KwantitatieveWaarde.waarde": 300,
+                    "KwantitatieveWaarde.eenheid": {
+                        "@id": "http://qudt.org/vocab/unit/M",
+                        "@type": "Eenheid"
+                    }
+                },
+                "LineaireReferentie.totPositie": {
+                    "@type": "KwantitatieveWaarde",
+                    "KwantitatieveWaarde.waarde": 315,
+                    "KwantitatieveWaarde.eenheid": {
+                        "@id": "http://qudt.org/vocab/unit/M",
+                        "@type": "Eenheid"
+                    }
+                }
+            }
+        },
+        {
+            "@id": "https://example.com/id/rooilijn/RL002",
+            "@type": "Rooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/OntworpenRooilijn",
+            "Rooilijnplanelement.naam": {
+                "@value": "Rooilijn fietstunnel rechts",
+                "@language": "nl"
+            },
+            "Rooilijn.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:LineString srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:LineString>",
+                    "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                }
+            },
+            "Rooilijn.kenmerkLinks": {
+                "@type": "OpenbareWeg"
+            },
+            "Rooilijn.kenmerkRechts": {
+                "@type": "AangelandeEigendommen"
+            },
+            "Lijn.lineaireReferentie": {
+                "@type": "LineaireReferentie",
+                "LineaireReferentie.lijnkenmerk": {
+                    "@type": "Lijnkenmerk",
+                    "Lijnkenmerk.type": "https://example.com/concept/lijndieptetype/ondergronds"
+                }
+            },
+            "LineaireReferentie.vanPositie": {
+                "@type": "KwantitatieveWaarde",
+                "KwantitatieveWaarde.waarde": 178.27,
+                "KwantitatieveWaarde.eenheid": {
+                    "@id": "http://qudt.org/vocab/unit/M",
+                    "@type": "Eenheid"
+                }
+            },
+            "LineaireReferentie.totPositie": {
+                "@type": "KwantitatieveWaarde",
+                "KwantitatieveWaarde.waarde": 197.07,
+                "KwantitatieveWaarde.eenheid": {
+                    "@id": "http://qudt.org/vocab/unit/M",
+                    "@type": "Eenheid"
+                }
+            }
+        }
+    ]
+}
