@@ -2,7 +2,7 @@
 
 ## Inleiding
 
-Het OSLO-model voor Rooilijnplannen biedt een gestandaardiseerd kader voor het beheer en de uitwisseling van rooilijngegevens in Vlaanderen. De focus van dit model ligt op de effectieve representatie en het gebruik van rooilijnen in diverse plannings- en juridisch-administratieve contexten. Het profiel ondersteunt het opzoeken en vastleggen van rooilijnen die noodzakelijk zijn voor bijvoorbeeld infrastructuurprojecten, en is in lijn met het Decreet houdende de gemeentewegen en het Decreet houdende vaststelling en realisatie van de (gewestelijke) rooilijnen.
+Het OSLO-model voor Rooilijnplannen biedt een gestandaardiseerd kader voor het beheer en de uitwisseling van rooilijngegevens in Vlaanderen. De focus van dit model ligt op de effectieve representatie en het gebruik van rooilijnen in diverse plannings- en juridisch-administratieve contexten. Het profiel ondersteunt het opzoeken en vastleggen van rooilijnen die noodzakelijk zijn voor bijvoorbeeld infrastructuurprojecten, en is in lijn met het [Decreet houdende de gemeentewegen](https://codex.vlaanderen.be/PrintDocument.ashx?id=1032035&datum=&geannoteerd=true&print=false) en het [Decreet houdende vaststelling en realisatie van de (gewestelijke) rooilijnen](https://codex.vlaanderen.be/Portals/Codex/documenten/1018076.html).
 
 Het rooilijnplan vormt het centrale punt voor het vastleggen van rooilijnen en kan verschillende juridische bronnen hebben, zoals een Ruimtelijk Uitvoeringsplan (RUP), een omgevingsvergunning, of een besluit. Binnen het rooilijnplan worden diverse rooilijnplanelementen opgenomen, waaronder rooilijnen, bouwlijnen, achteruitbouwstroken, en rooilijninventarissen. Deze elementen helpen bij het structureren en visualiseren van de ruimtelijke plannen.
 
