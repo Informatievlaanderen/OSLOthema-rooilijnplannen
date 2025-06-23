@@ -1,46 +1,33 @@
 # OSLO Rooilijnplannen
 
-## For editors
+## Inleiding
 
-- first read [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md) .
-- Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) 
-  to edit tags in Excel. The files `*.xlsm` are included in the repo as git-ignored.
+TODO 
 
+## Verslagen en presentaties
 
-## Administrative information
+De verslagen en presentaties van dit traject kan je terugvinden op het [Standaardenregister](https://data.vlaanderen.be/standaarden).
 
-### Tags
-To refer to the available git tags to create a publication point from, see the "Releases" tab of this repo.
+## In deze repository
 
+EAP-files met de UML-diagrammen.\
+Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
+Een [changelog](./CHANGELOG) met wijzigingen tov vorige versies.\
+Diverse resources:
+- Een overzicht van de [use cases]()
+- Een overzicht van gebruikte [bronnen]() (standaarden, implementaties, regelgeving).
+- Het [modelleringsrapport](https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen/tree/main/resources/Modeleerrapport).
+- Een map met [datavoorbeelden](https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen/tree/main/resources/Datavoorbeelden).
 
-### Branches
-The organisation and meaning of the git branches are documented in this table.
+## Issues
 
+Via de tab [issues](https://github.com/Informatievlaanderen/OSLOthema-energiehuis/issues) kan je opmerkingen en feedback over het model geven.
 
-| Branch | Purpose | Active (y/n) |
-| ------ | --------- | ---------------- | 
-|  |  |  |
+## Publicaties
 
+Volgende specificaties worden met de volgende status voorgelegd op WG datastandaarden van 22 mei 2025.
 
-### Story lines
+| Naam|Status|Uitgiftedatum|AP|VOC|
+| --- |--- |---|---|---|
+|Rooilijnplannen|OntwerpStandaard|20250601|[Link](https://data.vlaanderen.be/doc/applicatieprofiel/rooilijnplannen/)|[Link](https://data.vlaanderen.be/ns/rooilijnplannen/)|
 
-You find the story lines in the folder `story-lines`.
-Each story line has a separate folder.
-The title of these folders follow this template
-
-```text
-[number]-[kebab case version of title]
-```
-
-For example, the first story line with the title "Openbaar domein verbreden" has as 
-folder title `1-openbaar-domein-verbreden`.
-
-Each story line has 
-
-- A [Markdown](https://www.markdownguide.org/basic-syntax/) file called `README.md` 
-with the textual representation of the story line.
-This is often an exact copy of the text that is used on the slides for the thematic working groups.
-- A [JSON-LD](https://www.w3.org/TR/json-ld/) file called `data.jsonld` 
-with Linked Data representation of the story line using the data model.
-- An image file called `diagram.png` or `diagram.jpg` with a visual representation of the story line 
-using the data model.
