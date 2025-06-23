@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "https://data.vlaanderen.be/doc/applicatieprofiel/rooilijnplannen/ontwerpstandaard/2025-06-01/context/rooilijnplannen-ap.jsonld",
+        {
+            "RuimtelijkUitvoeringsplan.rooilijnplan": {
+                "@reverse": "Rooilijnplan.verordening"
+            }
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "https://example.com/id/rooilijnplan/RUP001",
+            "@type": "RuimtelijkUitvoeringsplan",
+            "RuimtelijkUitvoeringsplan.rooilijnplan": {
+                "@id": "https://example.com/id/rooilijnplan/RLP001"
+            }
+        },
+        {
+            "@id": "https://example.com/id/rooilijnplan/RLP001",
+            "@type": "Rooilijnplan",
+            "Plan.element": [
+                "https://example.com/id/rooilijn/RL001",
+                "https://example.com/id/bouwlijn/BL001",
+                ""
+            ]
+        },
+        {
+            "@id": "https://example.com/id/rooilijn/RL001",
+            "@type": "Rooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/HuidigeRooilijn",
+            "Rooilijn.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:LineString srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:LineString>",
+                    "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                }
+            },
+            "Rooilijn.kenmerkLinks": {
+                "@type": "OpenbareWeg"
+            },
+            "Rooilijn.kenmerkRechts": {
+                "@type": "AangelandeEigendommen",
+                "AangelandeEigendommen.bouwlijnreferentie": {
+                    "Bouwlijnreferentie.bouwlijn": "https://example.com/id/bouwlijn/BL001",
+                    "Bouwlijnreferentie.offsetRooilijn": {
+                        "@type": "KwantitatieveWaarde",
+                        "KwantitatieveWaarde.waarde": 8,
+                        "KwantitatieveWaarde.eenheid": {
+                            "@id": "http://qudt.org/vocab/unit/M",
+                            "@type": "Eenheid"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "@id": "https://example.com/id/bouwlijn/BL001",
+            "@type": "Bouwlijn",
+            "Bouwlijn.kenmerkLinks": {
+                "@type": "Bouwverbod"
+            },
+            "Bouwlijn.kenmerkRechts": {
+                "@type": "GeenBouwverbod"
+            }
+        }
+    ]
+}
