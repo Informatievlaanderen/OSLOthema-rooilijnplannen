@@ -1,0 +1,162 @@
+{
+    "@context": [
+        "https://data.vlaanderen.be/doc/applicatieprofiel/rooilijnplannen/ontwerpstandaard/2025-06-01/context/rooilijnplannen-ap.jsonld",
+        "https://data.vlaanderen.be/context/persoon-basis.jsonld",
+        {
+            "Besluit.rooilijnplan": {
+                "@reverse": "Rooilijnplan.verordening"
+            }
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "https://example.com/id/besluit/BSLT001",
+            "@type": "Besluit",
+            "Besluit.rooilijnplan": {
+                "@id": "https://example.com/id/rooilijnplan/RLP001"
+            },
+            "Besluit.titel": "Heraanleg kruispunt Dijkstraat - Zelebaan - vaststelling tracé.",
+            "Besluit.publicatiedatum": "20201214"
+        },
+        {
+            "@id": "https://example.com/id/rooilijnplan/RLP001",
+            "@type": "Rooilijnplan",
+            "Rooilijnplan.rooilijn": [
+                "https://example.com/id/rooilijn/RL001",
+                "https://example.com/id/rooilijn/RL002"
+            ],
+            "Rooilijnplan.rooilijninventaris": [
+                "https://example.com/id/rooilijninventaris/RLI001"
+            ]
+        },
+        {
+            "@id": "https://example.com/id/rooilijn/RL001",
+            "@type": "Rooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/HuidigeRooilijn",
+            "Rooilijn.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:LineString srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:LineString>",
+                    "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                }
+            },
+            "Rooilijn.kenmerkLinks": {
+                "@type": "OpenbareWeg"
+            },
+            "Rooilijn.kenmerkRechts": {
+                "@type": "AangelandeEigendommen"
+            }
+        },
+        {
+            "@id": "https://example.com/id/rooilijn/RL002",
+            "@type": "Rooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/OntworpenRooilijn",
+            "Rooilijn.geometrie": {
+                "@type": "Curve",
+                "Geometrie.gml": {
+                    "@value": "<gml:LineString srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:LineString>",
+                    "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                }
+            },
+            "Rooilijn.kenmerkLinks": {
+                "@type": "OpenbareWeg"
+            },
+            "Rooilijn.kenmerkRechts": {
+                "@type": "AangelandeEigendommen"
+            }
+        },
+        {
+            "@id": "https://example.com/id/rooilijninventaris/RLI001",
+            "@type": "Rooilijninventaris",
+            "Rooilijninventaris.rooilijn": "https://example.com/id/rooilijn/RL002",
+            "Rooilijninventaris.getroffenPerceel": [
+                {
+                    "@type": "Perceelreferentie",
+                    "Perceelreferentie.perceel": " https://example.com/id/kadastraalPatrimoniumperceel/KPP001"
+                },
+                {
+                    "@type": "Perceelreferentie",
+                    "Perceelreferentie.perceel": " https://example.com/id/kadastraalPatrimoniumperceel/KPP002"
+                },
+                {
+                    "@type": "Perceelreferentie",
+                    "Perceelreferentie.perceel": " https://example.com/id/kadastraalPatrimoniumperceel/KPP003"
+                }
+            ],
+            "Rooilijninventaris.getroffenOppervlakPerceel": {
+                "@type": "GetroffenOppervlak",
+                "GetroffenOppervlak.geometrie": {
+                    "@type": "Vlak",
+                    "Geometrie.gml": {
+                        "@value": "<gml:Polygon srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:Polygon>",
+                        "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                    }
+                },
+                "GetroffenOppervlak.oppervlakte": {
+                    "@type": "KwantitatieveWaarde",
+                    "KwantitatieveWaarde.waarde": 88.6,
+                    "KwantitatieveWaarde.eenheid": {
+                        "@id": "https://qudt.org/vocab/unit/M2",
+                        "@type": "Eenheid"
+                    }
+                }
+            },
+            "Rooilijninventaris.getroffenOppervlakOpenbareWeg": {
+                "@type": "GetroffenOppervlak",
+                "GetroffenOppervlak.geometrie": {
+                    "@type": "Vlak",
+                    "Geometrie.gml": {
+                        "@value": "<gml:Polygon srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370 srsDimension=\"2\"><gml:coordinates>...</gml:coordinates></gml:Polygon>",
+                        "@type": "http://www.opengis.net/ont/geosparql#gmlliteral"
+                    }
+                },
+                "GetroffenOppervlak.oppervlakte": {
+                    "@type": "KwantitatieveWaarde",
+                    "KwantitatieveWaarde.waarde": 88.6,
+                    "KwantitatieveWaarde.eenheid": {
+                        "@id": "https://qudt.org/vocab/unit/M2",
+                        "@type": "Eenheid"
+                    }
+                }
+            }
+        },
+        {
+            "@id": "https://example.com/id/kadastraalPatrimoniumperceel/KPP001",
+            "KadastraalPatrimoniumperceel.identificator": {
+                "@type": "Identificator",
+                "Identificator.identificator": {
+                    "@value": "46382B0835/00F000",
+                    "@type": "https://example.com/identificatortype/capakey"
+                }
+            },
+            "KadastraalPatrimoniumperceel.agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
+        },
+        {
+            "@id": "https://example.com/id/kadastraalPatrimoniumperceel/KPP002",
+            "KadastraalPatrimoniumperceel.identificator": {
+                "@type": "Identificator",
+                "Identificator.identificator": {
+                    "@value": "46382B0839/00V000",
+                    "@type": "https://example.com/identificatortype/capakey"
+                }
+            },
+            "KadastraalPatrimoniumperceel.agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
+        },
+        {
+            "@id": "https://example.com/id/kadastraalPatrimoniumperceel/KPP003",
+            "KadastraalPatrimoniumperceel.identificator": {
+                "@type": "Identificator",
+                "Identificator.identificator": {
+                    "@value": "46382B0839/00N000",
+                    "@type": "https://example.com/identificatortype/capakey"
+                }
+            },
+            "KadastraalPatrimoniumperceel.agentMetZakelijkRecht": "https://example.com/id/persoon/PRS001"
+        },
+        {
+            "@id": "https://example.com/id/persoon/PRS001",
+            "@type": "Persoon",
+            "achternaam": "Van de Velde - De Bruycker"
+        }
+    ]
+}
