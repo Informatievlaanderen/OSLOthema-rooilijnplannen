@@ -1,20 +1,55 @@
 {% extends "ap2.j2" %}
 
 {% block summary %}
-<p>Het applicatieprofiel OSLO-Rooilijnplannen beschrijft hoe met het overeenstemmend <a href="https://data.vlaanderen.be/ns/rooilijn">vocabularium</a>, aangevuld met termen uit andere vocabularia, een Rooilijnplan en de gegevens op dat plan kunnen worden beschreven.</p>
-<p>Centraal staat de Rooilijn, een object dat de grens tussen de OpenbareWeg en de zgn AangelandeEigendommen beschrijft.</p>
-<p>Deze Rooilijnen kunnen bestaande Rooilijnen of nog te realiseren Rooilijnen zijn.</p>
-<p>Bij de aanleg of aanpassing van een OpenbareWeg worden deze vastgelegd in een Rooilijnplan, geofficialiseerd dmv een Besluit (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/besluit-publicatie/">OSLO-Besluit</a>), RuimtelijkUitvoeringsplan of Omgevingsvergunning (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/">OSLO-Omgevingsvergunning</a>).</p>
-<p>De impact van een toekomstige Rooilijn wordt geïnventariseerd in een Rooilijninventaris die een opsomming bevat van de percelen of wegen waar de nieuwe Rooilijn doorloopt waardoor delen daarvan aan het openbaar domein zullen worden toegevoegd of afgestaan, de zgn GetroffenOppervlakken.</p>
-<p>Deze GetroffenOppervlakken worden beschreven door hun geometrie, hun oppervlakte en evt de Rooilijnen waardoor ze worden afgebakend. Oppervlakken kunnen ook individueel per perceel of weg of in totaal voor alle Rooilijnen op een Rooilijnplan worden opgegeven.</p>
-<p>Op een Rooilijnplan kunnen nog andere elementen staan zoals de Bouwlijn die de zone naast de OpenbareWeg aangeeft waarin niet gebouwd mag worden.</p>
-<p>Rooilijnen worden ook op andere Plannen aangetroffen zoals de Atlas der Buurtwegen, verkavelingsplannen, kadastrale plannen edm. Om die reden is een klasse Plan voorzien waarvan het Rooilijnplan dan een subklasse is. Om die reden spreken we ook van een Planelement en niet ve Rooilijnplanelement.</p>
-<p>Rooilijnen op andere plannen dan Rooilijnplannen zijn geen officiële Rooilijnen, het zijn lijnen die de huidige grens van de OpenbareWeg aangeven. </p>
-<p>De AangelandeEigendommen, OpenbareWeg, zone met Bouwverbod en GeenBouwverbod worden beschreven als kenmerken die zich links hetzij rechts van resp de Rooilijn of Bouwlijn voordoen.</p>
-<p>Deze kenmerken en meer bepaald AangelandeEigendommen en OpenbareWeg kunnen verder worden beschreven door de objecten op te sommen waarop ze betrekking hebben, bij de AangelandeEigendommen zijn dat de percelen en bij de OpenbareWeg de wegbanen of wegsegmenten waardoor de weg gevormd wordt.</p>
-<p>Onder percelen verstaan we KadastralePatrimoniumPercelen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/perceel/">OSLO-Perceel</a>), dit zijn de percelen die in de Rooilijninventaris worden weergegeven en waarvan het overeenstemmend KadastraalPlanperceel op het plan wordt getoond.</p>
-<p>Per perceel kan het GetroffenOppervlak en/of de waardevermeerdering of -vermindering worden weergegeven die door een Rooilijn wordt veroorzaakt.</p>
-<p>Wegbanen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/terreindelen/">OSLO-OpenbaarDomein)</a> beschrijven de volledige wegcorridor van de OpenbareWeg, ttz de rijbaan maar ook het voetpad of fietspad en de eventuele berm. De rand vd Wegbaan valt in principe samen met de Rooilijn of vormt daarvan een goede benadering. Alternatief kan de OpenbareWeg worden afgebakend door de lijnen die het wegennetwerk vormen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister/">OSLO-Wegenregister</a>) te combineren met de wegbreedte.</p>
-<p>Bijkomend zijn klassen voorzien om andere kenmerken van Rooilijnen of Bouwlijnen te beschrijven, incl de mogelijkheid om deze dmv LineaireReferentie te beperken tot een deel of een kant van de Lijn. Bvb om aan te geven welke delen van een FeitelijkeRooilijn behouden blijven en welke delen worden afgeschaft.</p>
-<p>We voorzien ook nog de klasse Nutsvoorzieningnetwerkelement uit <a href="https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/">OSLO-Kabels- en Leidingen</a> als aanknopingspunt voor die gevallen waar naar nutsleidingen moet worden verwezen, bvb omdat ze door een verplaatsing vd Rooilijn op privaat domein komt te liggen.</p> 
+<p>
+  Het applicatieprofiel OSLO-Rooilijnplannen beschrijft hoe met het overeenstemmend <a href="https://data.vlaanderen.be/ns/rooilijn">vocabularium</a>, 
+  aangevuld met termen uit andere vocabularia, een Rooilijnplan en de gegevens op dat plan kunnen worden beschreven.
+  Centraal staat de Rooilijn, een object dat de grens tussen de OpenbareWeg en de zgn AangelandeEigendommen beschrijft.
+  Deze Rooilijnen kunnen bestaande grenzen tussen de OpenbareWeg en de AangelandeEigendommen zijn of toekomstige grenzen.
+  De Rooilijnen kunnen worden vastgelegd in een Rooilijnplan, 
+  geofficialiseerd door middel van een Besluit (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/besluit-publicatie/">OSLO-Besluit</a>),
+  RuimtelijkUitvoeringsPlan (RUP) of Omgevingsvergunning (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/">OSLO-Omgevingsvergunning</a>).
+</p>
+
+<p>
+  De impact van een toekomstige Rooilijn wordt geïnventariseerd in een Rooilijnplaninventaris die een opsomming bevat van de percelen of wegen
+  waar de nieuwe Rooilijn doorloopt waardoor delen daarvan aan het openbaar domein zullen worden toegevoegd of afgestaan, de zogenaamde GetroffenOppervlakken.
+  Deze GetroffenOppervlakken worden beschreven door hun geometrie, hun oppervlakte en eventueel de Rooilijnen waardoor ze worden afgebakend.
+  Oppervlakken kunnen ook individueel per perceel of weg of in totaal voor alle Rooilijnen op een Rooilijnplan worden opgegeven.
+</p>
+
+<p>
+  Op een Rooilijnplan kunnen nog andere elementen staan zoals de Bouwlijn die de grens aangeeft van de achteruitbouwstrook waarin niet gebouwd mag worden.
+  Rooilijnen worden ook op andere Plannen aangetroffen zoals de Atlas der Buurtwegen, verkavelingsplannen, landmetersplannen etc.
+  Om die reden is een klasse Plan voorzien waarvan het Rooilijnplan dan een subklasse is. 
+  Om die reden spreken we ook van een Planelement en niet van een Rooilijnplanelement.
+  Rooilijnen op andere plannen dan Rooilijnplannen zijn geen Rooilijnen zoals bepaald in het gemeentewegendecreet of het rooilijndecreet, 
+  het zijn lijnen die de huidige grens tussen de AangelandeEigendommen en de OpenbareWeg aangeven.
+  De AangelandeEigendommen, OpenbareWeg, zone met Bouwverbod en GeenBouwverbod worden beschreven als kenmerken
+  die zich links hetzij rechts van resp de Rooilijn of Bouwlijn voordoen.
+</p>
+
+<p>
+  Deze kenmerken en meer bepaald AangelandeEigendommen en OpenbareWeg kunnen verder worden beschreven door de objecten op te sommen waarop ze betrekking hebben,
+  bij de AangelandeEigendommen zijn dat de percelen en bij de OpenbareWeg de wegbanen of wegsegmenten waardoor de weg gevormd wordt.
+  Onder percelen verstaan we KadastralePatrimoniumPercelen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/perceel/">OSLO-Perceel</a>),
+  dit zijn de percelen die in de Rooilijninventaris worden weergegeven en waarvan het overeenstemmend KadastraalPlanperceel op het plan wordt getoond.
+  Per perceel kan het GetroffenOppervlak en/of de waardevermeerdering of -vermindering worden weergegeven die door een Rooilijn wordt veroorzaakt.
+</p>
+
+<p>
+  Wegbanen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/terreindelen/">OSLO-OpenbaarDomein</a>) beschrijven de volledige wegcorridor van de OpenbareWeg,
+  zoals de rijbaan maar ook het voetpad of fietspad en de eventuele berm. Het model laat ook toe de OpenbareWeg af te bakenen door de lijnen die het wegennetwerk 
+  vormen (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister/">OSLO-Wegenregister</a>) te combineren met de wegbreedte.
+</p>
+
+<p>
+  Bijkomend zijn klassen voorzien om andere kenmerken van Rooilijnen of Bouwlijnen te beschrijven, inclusief de mogelijkheid om deze door middel van LineaireReferentie te beperken
+  tot een deel of een kant van de Lijn, bijvoorbeeld om aan te geven welke delen van een FeitelijkeRooilijn behouden blijven en welke delen worden afgeschaft.
+</p>
+
+<p>
+  Er werd nog een klasse Nutsvoorzieningnetwerkelement voorzien uit <a href="https://data.vlaanderen.be/doc/applicatieprofiel/kabels-en-leidingen/">OSLO-Kabels- en Leidingen</a>
+  als aanknopingspunt voor die gevallen waar naar nutsleidingen moet worden verwezen, bijvoorbeeld omdat ze door een verplaatsing van de Rooilijn op privaat domein komen te liggen.
+</p>
 {% endblock %}
