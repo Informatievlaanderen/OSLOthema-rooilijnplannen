@@ -2,28 +2,28 @@
 
 <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype>
     a skos:ConceptScheme ;
-    skos:prefLabel "Conceptscheme type van rooilijnen."@nl ;
-    skos:definition "Codelijst voor type van rooilijnen."@nl .
+    skos:prefLabel "Conceptscheme type van Rooilijnen."@nl ;
+    skos:definition "Codelijst voor type van Rooilijnen."@nl .
 
-<https://data.vlaanderen.be/id/concept/Rooilijntype/HuidigeRooilijn> 
+<https://data.vlaanderen.be/id/concept/Rooilijntype/HuidigeRooilijn>
     a skos:Concept ;
     skos:prefLabel "Huidige Rooilijn"@nl ;
-    skos:altLabel "Declaratieve rooilijn"@nl;
+    skos:altLabel "Declaratieve Rooilijn"@nl;
     skos:definition "De rooilijn, vastgelegd in een rooilijnplan, die de huidige grens tussen de openbare weg en de aangelande eigendommen weergeeft."@nl ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
 
-<https://data.vlaanderen.be/id/concept/Rooilijntype/OntworpenRooilijn> 
+<https://data.vlaanderen.be/id/concept/Rooilijntype/ToekomstigeRooilijn>
     a skos:Concept ;
-    skos:prefLabel "Ontworpen Rooilijn"@nl ;
-    skos:altLabel "Constitutieve rooilijn"@nl;
+    skos:prefLabel "Toekomstige Rooilijn"@nl ;
+    skos:altLabel "Constitutieve Rooilijn"@nl;
     skos:definition "De rooilijn, vastgelegd in een rooilijnplan, die de toekomstige, nog te realiseren grens tussen de openbare weg en de aangelande eigendommen aangeeft."@nl ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
 
-<https://data.vlaanderen.be/id/concept/Rooilijntype/GrensOpenbareWeg> 
+<https://data.vlaanderen.be/id/concept/Rooilijntype/FeitelijkeRooilijn>
     a skos:Concept ;
-    skos:prefLabel "Grens Openbare Weg"@nl ;
+    skos:prefLabel "Feitelijke Rooilijn"@nl ;
     skos:definition "Lijn die de weg afbakent die voor het openbaar verkeer openstaat, ook als de bedding ervan een private eigendom is. Een weg omvat niet enkel de (rij)baan maar ook al haar aanhorigheden."@nl ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Rooilijntype> .
