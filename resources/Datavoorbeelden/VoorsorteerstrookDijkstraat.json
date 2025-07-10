@@ -25,8 +25,8 @@
                 "https://example.com/id/rooilijn/RL001",
                 "https://example.com/id/rooilijn/RL002"
             ],
-            "Rooilijnplan.rooilijninventaris": [
-                "https://example.com/id/rooilijninventaris/RLI001"
+            "Rooilijnplan.rooilijnplaninventaris": [
+                "https://example.com/id/rooilijnplaninventaris/RLI001"
             ]
         },
         {
@@ -50,7 +50,7 @@
         {
             "@id": "https://example.com/id/rooilijn/RL002",
             "@type": "Rooilijn",
-            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/OntworpenRooilijn",
+            "Rooilijn.rooilijntype": "https://data.vlaanderen.be/doc/concept/Rooilijntype/ToekomstigeRooilijn",
             "Rooilijn.geometrie": {
                 "@type": "Curve",
                 "Geometrie.gml": {
@@ -66,10 +66,10 @@
             }
         },
         {
-            "@id": "https://example.com/id/rooilijninventaris/RLI001",
-            "@type": "Rooilijninventaris",
-            "Rooilijninventaris.rooilijn": "https://example.com/id/rooilijn/RL002",
-            "Rooilijninventaris.getroffenPerceel": [
+            "@id": "https://example.com/id/rooilijnplaninventaris/RLI001",
+            "@type": "Rooilijnplaninventaris",
+            "Rooilijnplaninventaris.rooilijn": "https://example.com/id/rooilijn/RL002",
+            "Rooilijnplaninventaris.getroffenPerceel": [
                 {
                     "@type": "Perceelreferentie",
                     "Perceelreferentie.perceel": " https://example.com/id/kadastraalPatrimoniumperceel/KPP001"
@@ -83,7 +83,7 @@
                     "Perceelreferentie.perceel": " https://example.com/id/kadastraalPatrimoniumperceel/KPP003"
                 }
             ],
-            "Rooilijninventaris.getroffenOppervlakPerceel": {
+            "Rooilijnplaninventaris.getroffenOppervlakPerceel": {
                 "@type": "GetroffenOppervlak",
                 "GetroffenOppervlak.geometrie": {
                     "@type": "Vlak",
@@ -101,7 +101,7 @@
                     }
                 }
             },
-            "Rooilijninventaris.getroffenOppervlakOpenbareWeg": {
+            "Rooilijnplaninventaris.getroffenOppervlakOpenbareWeg": {
                 "@type": "GetroffenOppervlak",
                 "GetroffenOppervlak.geometrie": {
                     "@type": "Vlak",
@@ -160,3 +160,4 @@
         }
     ]
 }
+
