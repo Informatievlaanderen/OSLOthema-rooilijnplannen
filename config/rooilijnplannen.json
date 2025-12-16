@@ -1,6 +1,6 @@
 [
 	{
-		"name": "rooilijnplannen",
+		"name": "rooilijnplannen-ap",
 		"type": "ap",
 		"eap": "Rooilijnplannen.eap",
 		"diagram": "Rooilijnplannen",
@@ -16,9 +16,9 @@
 		"standaardregisterurl": "https://data.vlaanderen.be/standaarden/applicatieprofiel-rooilijnplannen"
 	},
 	{
-		"name": "rooilijnplannen",
+		"name": "rooilijnplannen-voc",
 		"type": "voc",
-		"eap": "RooilijnplannenVOC.eap",
+		"eap": "Rooilijnplannen.eap",
 		"diagram": "Rooilijnplannen",
 		"template": "rooilijnplannen-voc.j2",
 		"title": "Vocabularium Rooilijnplannen",
