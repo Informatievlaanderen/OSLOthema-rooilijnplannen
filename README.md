@@ -16,7 +16,7 @@ De verslagen en presentaties van dit traject kan je terugvinden op het [Standaar
 
 ## In deze repository
 
-EAP-files met de UML-diagrammen.\
+EAP-files met de UML-diagrammen. OPGELET: aparte EAP voor het VOC, enige manier om de juiste uri's voor kenmerkLinks en kenmerkRechts te genereren.\
 Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
 Een [changelog](./CHANGELOG) met wijzigingen tov vorige versies.\
 Diverse resources:
